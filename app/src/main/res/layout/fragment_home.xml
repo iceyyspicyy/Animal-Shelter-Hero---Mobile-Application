@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".Fragments.HomeFragment">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/img"
+        app:lottie_rawRes="@raw/dog_waking"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginTop="60dp"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView"
+        android:textColor="@color/black"
+        android:layout_below="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No Dogs request found.."
+        android:fontFamily="@font/scada_bold"
+        android:letterSpacing="0.06"
+        android:textSize="22sp"/>
+
+
+    <com.bloodbank.bookexchange.Pager.VerticalViewPager
+        android:id="@+id/verticalpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_alignParentLeft="true">
+
+    </com.bloodbank.bookexchange.Pager.VerticalViewPager>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"/>
+
+</RelativeLayout>

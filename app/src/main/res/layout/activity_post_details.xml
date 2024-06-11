@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".PostDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/dog_default"
+                android:id="@+id/post_image"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/back_background"
+                android:src="@drawable/back_icon"
+                android:onClick="backtomainscreen"
+                android:padding="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="12dp"
+                android:id="@+id/backIV"/>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gray"
+                android:layout_below="@id/post_image"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userName"
+                android:text="username"
+                android:fontFamily="@font/scada_bold"
+                android:letterSpacing="0.06"
+                android:includeFontPadding="false"
+                android:layout_below="@id/view1"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_toEndOf="@id/profile_image"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="12dp"/>
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/userphoto"
+                android:layout_below="@id/view1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"/>
+
+            <LinearLayout
+                android:id="@+id/timeDateLL"
+                android:layout_below="@id/userName"
+                android:layout_toEndOf="@id/profile_image"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/timeTV"
+                    android:text="time"
+                    android:fontFamily="@font/scada"
+                    android:letterSpacing="0.06"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dateTV"
+                    android:text="date"
+                    android:background="@color/gray"
+                    android:fontFamily="@font/scada"
+                    android:letterSpacing="0.06"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_marginStart="2dp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gray"
+                android:layout_below="@id/timeDateLL"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dog Breed"
+                android:id="@+id/nameTV"
+                android:layout_below="@id/view"
+                android:fontFamily="@font/scada_bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="16sp"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.03"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionTV"
+                android:layout_below="@id/nameTV"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:letterSpacing="0.03"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/scada"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="Description"/>
+
+            <TextView
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location: "
+                android:textSize="16sp"
+                android:fontFamily="@font/scada_bold"
+                android:textColor="@color/black"
+                android:layout_below="@id/descriptionTV"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="12dp"
+                android:letterSpacing="0.03"
+                android:includeFontPadding="false"/>
+
+            <TextView
+                android:id="@+id/locationTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="16sp"
+                android:fontFamily="@font/scada"
+                android:textColor="@color/black"
+                android:layout_below="@id/descriptionTV"
+                android:layout_toEndOf="@id/ll"
+                android:layout_marginTop="30dp"
+                android:letterSpacing="0.03"
+                android:includeFontPadding="false"/>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gray"
+                android:layout_below="@id/locationTV"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/requestBTN"
+                android:layout_below="@id/view2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="30dp"
+                android:text="Back to main page"
+                android:textSize="18sp"
+                android:background="@drawable/login_btn_ripple"
+                android:textColor="@color/white"
+                android:letterSpacing="0.09"
+                android:fontFamily="@font/scada"
+                android:includeFontPadding="false"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

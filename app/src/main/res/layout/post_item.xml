@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue">
+
+        <TextView
+            android:id="@+id/rescue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rescued_by"
+            android:fontFamily="@font/scada"
+            android:letterSpacing="0.02"
+            android:background="@color/background3"
+            android:includeFontPadding="false"
+            android:textSize="12sp"
+            android:textColor="@color/blue"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:layout_alignBottom="@id/row_post_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/row_post_title"
+            android:layout_below="@id/card1"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Post title"
+            android:layout_toEndOf="@id/rescue"
+            android:textColor="@color/white2"
+            android:fontFamily="@font/scada_bold"
+            android:textSize="17sp"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.02" />
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/row_post_description"
+            android:layout_below="@id/row_post_title"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:text="Post description"
+            android:textColor="@color/white2"
+            android:fontFamily="@font/scada"
+            android:textSize="13sp"
+            app:trimExpandedText="Read More"
+            app:trimCollapsedText="Read Less"
+            app:trimMode="trimModeLength"
+            app:trimLength="30"
+            app:colorClickableText="@color/background2"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.02" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card1"
+            app:cardCornerRadius="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/row_post_img"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dog_default"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

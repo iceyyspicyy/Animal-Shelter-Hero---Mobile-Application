@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AchievementActivity">
+
+    <RelativeLayout
+        android:id="@+id/tahnkyou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/th"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dog's say Thank you!"
+            android:textSize="24sp"
+            android:fontFamily="@font/scada_bold"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:letterSpacing="0.04"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/dog_thank"
+            android:layout_toEndOf="@id/th"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/achievementRecyclerView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tahnkyou"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/ach_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:id="@+id/loading"
+            app:lottie_rawRes="@raw/dog_waking"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading Achievements.."
+            android:fontFamily="@font/scada"
+            android:textColor="@color/blue"
+            android:includeFontPadding="false"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

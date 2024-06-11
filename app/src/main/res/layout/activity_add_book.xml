@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/scada"
+                android:letterSpacing="0.03"
+                android:textColor="#fff" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_dog_details"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/scada"
+                    android:letterSpacing="0.03"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:includeFontPadding="false"/>
+
+                <Button
+                    android:id="@+id/chooseImage"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/choose_image"
+                    android:gravity="center"
+                    android:text="Upload Image"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/scada"
+                    android:textAllCaps="false"
+                    android:textSize="17sp"
+                    android:letterSpacing="0.1"
+                    android:drawableStart="@drawable/upload_photo"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="12dp"
+                    android:layout_marginTop="16dp"/>
+
+                <ImageView
+                    android:id="@+id/prev_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:padding="12dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dog_default" />
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bookNameCard"
+                android:layout_below="@+id/ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/bookName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Dog Breed, Type"
+                    app:hintTextColor="@color/gray"
+                    android:background="@color/new_back">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:background="@drawable/edittext_back"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/scada"
+                        android:letterSpacing="0.03"
+                        android:includeFontPadding="false"
+                        android:textSize="16sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bookDescCard"
+                android:layout_below="@+id/bookNameCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/bookDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Share the condition"
+                    android:background="@color/new_back"
+                    app:hintTextColor="@color/gray">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:inputType="textMultiLine"
+                        android:background="@drawable/edittext_back"
+                        android:padding="12dp"
+                        android:maxLines="6"
+                        android:gravity="top"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/scada"
+                        android:letterSpacing="0.03"
+                        android:includeFontPadding="false"
+                        android:textSize="16sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bookLocationCard"
+                android:layout_below="@+id/bookDescCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Location"
+                    android:background="@color/new_back"
+                    app:hintTextColor="@color/gray">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:background="@drawable/edittext_back"
+                        android:padding="12dp"
+                        android:maxLines="6"
+                        android:gravity="top"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/scada"
+                        android:letterSpacing="0.03"
+                        android:includeFontPadding="false"
+                        android:textSize="16sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bookTagsCard"
+                android:layout_below="@+id/bookLocationCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/bookTags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tags (#breedtype, #dog)"
+                    android:background="@color/new_back"
+                    app:hintTextColor="@color/gray">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:background="@drawable/edittext_back"
+                        android:padding="12dp"
+                        android:maxLines="6"
+                        android:gravity="top"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/scada"
+                        android:letterSpacing="0.03"
+                        android:includeFontPadding="false"
+                        android:textSize="16sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/upload_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookTagsCard"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/login_btn_ripple"
+                android:gravity="center"
+                android:text="Post"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/scada"
+                android:textSize="18sp"
+                android:letterSpacing="0.08"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
+

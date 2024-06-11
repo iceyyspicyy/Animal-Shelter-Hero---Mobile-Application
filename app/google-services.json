@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "471134428814",
+    "firebase_url": "https://fir-90e0a.firebaseio.com",
+    "project_id": "fir-90e0a",
+    "storage_bucket": "fir-90e0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471134428814:android:ae0e766c2ea022eef573df",
+        "android_client_info": {
+          "package_name": "com.bloodbank.bookexchange"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471134428814-vautl889614vk9aluf5bc5a7lhbfjpd2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bloodbank.bookexchange",
+            "certificate_hash": "8b983f4a73e4b57a4a023275a2fb47f903646823"
+          }
+        },
+        {
+          "client_id": "471134428814-cvpcgeaiio720i09cc01j43b27b7kj8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADoM_JIV2enWyWP4ZJA7fEUkC_qriUGHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471134428814-cvpcgeaiio720i09cc01j43b27b7kj8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471134428814:android:d03aef23004f5877f573df",
+        "android_client_info": {
+          "package_name": "com.codewithgolap.locate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471134428814-jesili8pto6fs8scnnm0enl20pk868ds.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codewithgolap.locate",
+            "certificate_hash": "8b983f4a73e4b57a4a023275a2fb47f903646823"
+          }
+        },
+        {
+          "client_id": "471134428814-cvpcgeaiio720i09cc01j43b27b7kj8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADoM_JIV2enWyWP4ZJA7fEUkC_qriUGHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471134428814-cvpcgeaiio720i09cc01j43b27b7kj8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471134428814:android:b4801c70f08ffdc9f573df",
+        "android_client_info": {
+          "package_name": "com.codewithgolap.locateApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471134428814-c1rsgcutkqlufcekt8mpvjstc4ff3kok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codewithgolap.locateApp",
+            "certificate_hash": "8b983f4a73e4b57a4a023275a2fb47f903646823"
+          }
+        },
+        {
+          "client_id": "471134428814-cvpcgeaiio720i09cc01j43b27b7kj8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADoM_JIV2enWyWP4ZJA7fEUkC_qriUGHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471134428814-cvpcgeaiio720i09cc01j43b27b7kj8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471134428814:android:a85cf792b043f8c1f573df",
+        "android_client_info": {
+          "package_name": "com.codewithgolap.swipeablevideo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471134428814-g811jpdldbc2ceagvptjtjngc2ctinp5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codewithgolap.swipeablevideo",
+            "certificate_hash": "8b983f4a73e4b57a4a023275a2fb47f903646823"
+          }
+        },
+        {
+          "client_id": "471134428814-cvpcgeaiio720i09cc01j43b27b7kj8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADoM_JIV2enWyWP4ZJA7fEUkC_qriUGHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471134428814-cvpcgeaiio720i09cc01j43b27b7kj8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

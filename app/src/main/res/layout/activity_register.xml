@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/backIV"
+        android:onClick="backtostartscreen"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/back_icon" />
+
+    <ImageView
+        android:id="@+id/shape"
+        android:layout_width="350dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="-145dp"
+        android:src="@drawable/shape_1" />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="-160dp"
+        android:src="@drawable/shape_2" />
+
+    <!--    <include-->
+    <!--        android:id="@+id/toolbar"-->
+    <!--        layout="@layout/bar_layout"-->
+    <!--        />-->
+
+    <TextView
+        android:id="@+id/rescuer_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shape"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/scada_bold"
+        android:includeFontPadding="false"
+        android:text="Be a rescuer"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/rescuer_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rescuer_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/scada"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.03"
+        android:text="Create your account, and pick a little buddy for your love one!"
+        android:textColor="@color/gray"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rescuer_2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_back"
+                android:drawableStart="@drawable/username"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/scada"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:letterSpacing="0.04"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="17sp" />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_back"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/scada"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:letterSpacing="0.04"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="17sp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_back"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/scada"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:letterSpacing="0.04"
+                android:padding="14dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="17sp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="6dp"
+            android:background="@drawable/login_btn_ripple"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:fontFamily="@font/scada"
+            android:textSize="18sp"
+            android:letterSpacing="0.04"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textSize="16sp"
+            android:fontFamily="@font/scada"
+            android:textColor="@color/gray"
+            android:letterSpacing="0.03"/>
+
+        <TextView
+            android:id="@+id/loginTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:onClick="backtologinscreen"
+            android:textSize="16sp"
+            android:fontFamily="@font/scada_bold"
+            android:textColor="@color/black"
+            android:letterSpacing="0.03"
+            android:padding="6dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
